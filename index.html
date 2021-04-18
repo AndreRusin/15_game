@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятнашки</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css"> 
+</head>
+<body>
+<div class="container">
+    <div class="config">
+        <div class="sound" data-title="ВКЛ/ВЫКЛ звук">
+            <!-- <i class="fas fa-volume-mute"></i> -->
+            <i class="fas fa-volume-up" ></i>
+        </div>
+        <div class="reset_score" data-title="Сбросить таблицу результатов">
+            <i class="fas fa-poll"></i>
+        </div>
+    </div>
+
+    <div class="info">
+        <div>
+            Время: <span class="timer">00:00</span>
+        </div>
+        <div>
+            Ходов: <span class="count">00</span>
+        </div>
+    </div>
+    <div class="field">
+
+    </div>
+    <div class="start_btn">
+        Начать игру
+    </div>
+    
+    <div class="scoreboard">
+        <table class="table_score">
+            <tr>
+                <th>№</th>
+                <th>Время</th>
+                <th>Ходов сделано</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>--:--</td>
+                <td>---</td>
+            </tr>
+        </table>  
+    </div>
+      
+
+    
+</div>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>

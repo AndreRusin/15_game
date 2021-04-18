@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg.jpg') no-repeat 50% 50%; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.config{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgba(28, 224, 61, 0.7);
+    display: flex;
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.sound, .reset_score{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sound:hover, .reset_score:hover{
+    color: rgba(28, 224, 61, 1);
+}
+
+.sound:hover::after, .reset_score:hover::after{
+    content: attr(data-title);
+    position: absolute; 
+    left: 20%; top: 100%;
+    z-index: 1;
+    background-color:  rgba(28, 224, 61, .7);
+    border-radius: 7px;
+    color: black;
+    font-size: 11px;
+    padding: 3px;
+    width: 100px;
+}
+
+.info{
+    width: 300px;
+    height: 50px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(28, 224, 61, 1);
+    border-radius: 3px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.start_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 224, 61, 1);
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.start_btn:hover{
+    background-color: rgb(24, 196, 53);
+    font-size: 23px;
+}
+
+
+.field{
+    width: 402px;
+    height: 402px;
+    position: relative;
+    display: none;
+}
+
+.cell{
+    width: 98px;
+    height: 98px;
+    background-color: rgba(28, 224, 61, .8);
+    background-size: cover;
+    border-radius: 3px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;   
+    transition: all 0.3s;
+}
+
+.scoreboard{
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgba(28, 224, 61, 1);
+    border-radius: 3px;
+    height: 100px;
+    width: 300px;
+    overflow-y: scroll;
+}
+
+.scoreboard::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(28, 224, 61);
+    border-radius: 0 3px 3px 0;
+}
+
+.scoreboard::-webkit-scrollbar-thumb {
+    background-color: #009107;
+}
+
+.table_score{
+    width: 100%;
+}
+
+.table_score tr td, .table_score tr th{
+    padding: 3px 5px;
+}
