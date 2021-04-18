@@ -101,7 +101,7 @@
     position: absolute;
     cursor: pointer;
     user-select: none;   
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 .scoreboard{
